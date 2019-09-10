@@ -1,0 +1,35 @@
+.form__input {
+  border: solid 1px #d3d7d9;
+
+  &::placeholder {
+    .font-italic();
+    .font(20px, 24px);
+    text-transform: lowercase;
+  }
+
+  &:hover {
+    border-color: @form-color;
+  }
+}
+
+.form__button {
+  .font-light();
+  .font(24px, 24px);
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  color: @opposite-text-color;
+  border: none;
+  background-color: @form-color;
+
+  &:hover {
+    opacity: 0.6;
+  }
+  &:focus {
+    opacity: 0.3;
+    outline: none;
+  }
+
+  cursor: pointer;
+}
+
