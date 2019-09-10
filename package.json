@@ -1,7 +1,7 @@
 {
   "name": "bicycle",
   "version": "1.0.0",
-  "private": false,
+  "private": true,
   "description": "Главная страница сайта ретро-велов от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
@@ -52,5 +52,9 @@
     "normalize.less": "^1.0.0",
     "readable-stream": "^3.3.0",
     "svgxuse": "^1.2.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JepardMay/bicycle.git"
   }
 }
