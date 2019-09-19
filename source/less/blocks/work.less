@@ -1,4 +1,30 @@
+.work {
+  margin: 0 auto;
+  width: @fixed-page-width;
+}
+
+.work__bike {
+  display: flex;
+}
+
+.work__image img {
+  display: block;
+}
+
+.work__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 533px;
+}
+
+.work__info {
+  padding: 0 67px;
+}
+
 .work__title {
+  margin: 0;
+  margin-bottom: 26px;
   .font-bold();
   text-transform: uppercase;
   letter-spacing: 3.6px;
@@ -7,6 +33,7 @@
 }
 
 .work__text {
+  margin: 0;
   .font(16px, 30px);
   text-align: justify;
 }
