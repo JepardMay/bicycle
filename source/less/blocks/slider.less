@@ -1,0 +1,42 @@
+.slider__controls {
+  position: absolute;
+  bottom: 68px;
+  left:  50%;
+  margin-left: -25.5px;
+
+  z-index: 20;
+
+  font-size: 0;
+}
+
+.slider__label {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin-right: 9px;
+
+  position: relative;
+
+  vertical-align: middle;
+  text-align: center;
+
+  background-color: transparent;
+  border: 1px solid @slider-switch-color;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#item_one:checked ~ .slider__controls .slider__label[for="item_one"]::after,
+#item_two:checked ~ .slider__controls .slider__label[for="item_two"]::after,
+#item_three:checked ~ .slider__controls .slider__label[for="item_three"]::after {
+    content: "";
+
+    position: absolute;
+    top: -1px;
+    left: -1px;
+
+    width: 11px;
+    height: 11px;
+    background-color: @slider-switch-color;
+    border-radius: 50%;
+}

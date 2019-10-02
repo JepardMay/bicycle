@@ -11,20 +11,20 @@
   <header class="page-header">
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
-        <li class="site-list__item">
+        <li class="site-list__item site-list__item--with-decor">
           <a class="site-list__link" href="#">About us</a>
         </li>
         <li class="site-list__item">
           <a class="site-list__link" href="#">Work</a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__link logo">
+        <li class="site-list__item logo">
+          <a class="site-list__link logo__link">
             <svg class="logo__icon">
               <use xlink:href="img/sprite.svg#logo"></use>
             </svg>
           </a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item site-list__item--with-decor">
           <a class="site-list__link" href="#">Shop</a>
         </li>
         <li class="site-list__item">
@@ -37,6 +37,9 @@
     <h1 class="visually-hidden">Bicycle</h1>
     <section class="about-us">
       <div class="about-us__wrapper">
+        <svg class="about-us__icon">
+          <use xlink:href="img/sprite.svg#icon-gear"></use>
+        </svg>
         <h2 class="about-us__title">A new generation of vintage bike</h2>
         <p class="about-us__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
           has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
@@ -52,6 +55,9 @@
         </div>
         <div class="work__wrapper">
           <div class="work__info">
+            <svg class="work__icon work__icon--oliva">
+              <use xlink:href="img/sprite.svg#icon-frame"></use>
+            </svg>
             <h3 class="work__title">Vintage Oliva</h3>
             <p class="work__text">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -67,6 +73,9 @@
       <div class="work__bike work__bike--02">
         <div class="work__wrapper">
           <div class="work__info">
+            <svg class="work__icon work__icon--borisa">
+              <use xlink:href="img/sprite.svg#icon-wheel"></use>
+            </svg>
             <h3 class="work__title">La Boriosa</h3>
             <p class="work__text">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -88,6 +97,9 @@
         </div>
         <div class="work__wrapper">
           <div class="work__info">
+            <svg class="work__icon work__icon--hulot">
+              <use xlink:href="img/sprite.svg#icon-fork"></use>
+            </svg>
             <h3 class="work__title">Retrò Bike - M. Hulot</h3>
             <p class="work__text">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -107,8 +119,19 @@
     <section class="reviews">
       <div class="reviews__wrapper slider">
         <h2 class="visually-hidden">Twitter</h2>
+        <input class="visually-hidden" type="radio" id="item_one" name="slider-toggle" checked="">
+        <input class="visually-hidden" type="radio" id="item_two" name="slider-toggle">
+        <input class="visually-hidden" type="radio" id="item_three" name="slider-toggle">
+        <div class="slider__controls">
+          <label class="slider__label" for="item_one">One</label>
+          <label class="slider__label" for="item_two">Two</label>
+          <label class="slider__label" for="item_three">Three</label>
+        </div>
         <div class="reviews__list slider__list">
           <blockquote class="reviews__item slider__item">
+            <svg class="reviews__icon">
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
+            </svg>
             <cite class="reviews__author">AOD New York @aod </cite>
             <small class="reviews__time-ago">/ 35 min</small>
             <p class="reviews__text">
@@ -126,18 +149,27 @@
         <div class="shop__column">
           <div class="shop__image shop__image--small">
             <div class="shop__popup">
+              <svg class="shop__icon">
+                <use xlink:href="img/sprite.svg#icon-bicycle"></use>
+              </svg>
               <a class="shop__link" href="#">Shop now</a>
             </div>
             <img src="img/image-08.jpg" width="267" height="267" alt="Our shop Photo 1">
           </div>
           <div class="shop__image shop__image--small">
             <div class="shop__popup">
+              <svg class="shop__icon">
+                <use xlink:href="img/sprite.svg#icon-bicycle"></use>
+              </svg>
               <a class="shop__link" href="#">Shop now</a>
             </div>
             <img src="img/image-09.jpg" width="267" height="267" alt="Our shop Photo 2">
           </div>
           <div class="shop__image shop__image--large">
             <div class="shop__popup">
+              <svg class="shop__icon">
+                <use xlink:href="img/sprite.svg#icon-bicycle"></use>
+              </svg>
               <a class="shop__link" href="#">Shop now</a>
             </div>
             <img src="img/image-10.jpg" width="533" height="267" alt="Our shop Photo 3">
@@ -146,12 +178,18 @@
         <div class="shop__column">
           <div class="shop__image shop__image--medium">
             <div class="shop__popup">
+              <svg class="shop__icon">
+                <use xlink:href="img/sprite.svg#icon-bicycle"></use>
+              </svg>
               <a class="shop__link" href="#">Shop now</a>
             </div>
             <img src="img/image-11.jpg" width="267" height="534" alt="Our shop Photo 4">
           </div>
           <div class="shop__image shop__image--medium">
             <div class="shop__popup">
+              <svg class="shop__icon">
+                <use xlink:href="img/sprite.svg#icon-bicycle"></use>
+              </svg>
               <a class="shop__link" href="#">Shop now</a>
             </div>
             <img src="img/image-12.jpg" width="269" height="534" alt="Our shop Photo 5">
@@ -160,18 +198,27 @@
         <div class="shop__column">
           <div class="shop__image shop__image--large">
             <div class="shop__popup">
+              <svg class="shop__icon">
+                <use xlink:href="img/sprite.svg#icon-bicycle"></use>
+              </svg>
               <a class="shop__link" href="#">Shop now</a>
             </div>
             <img src="img/image-13.jpg" width="533" height="267" alt="Our shop Photo 6">
           </div>
           <div class="shop__image shop__image--small">
             <div class="shop__popup">
+              <svg class="shop__icon">
+                <use xlink:href="img/sprite.svg#icon-bicycle"></use>
+              </svg>
               <a class="shop__link" href="#">Shop now</a>
             </div>
             <img src="img/image-14.jpg" width="267" height="267" alt="Our shop Photo 7">
           </div>
           <div class="shop__image shop__image--small">
             <div class="shop__popup">
+              <svg class="shop__icon">
+                <use xlink:href="img/sprite.svg#icon-bicycle"></use>
+              </svg>
               <a class="shop__link" href="#">Shop now</a>
             </div>
             <img src="img/image-15.jpg" width="267" height="267" alt="Our shop Photo 8">
@@ -203,8 +250,8 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__address address">
-      <b class="address__owner">AOD New York</b>
       <p class="address__text">
+        <b class="address__owner">AOD New York</b><br>
         2250 Lexington Avenue<br>
         New York, NY 10035 - <a class="address__email" href="mailto:info@domain.com">info@domain.com</a>
       </p>
@@ -238,13 +285,14 @@
       </ul>
     </div>
     <div class="page-footer__credits credits">
-      <b class="credits__text">Handcrafted by </b>
-      <a class="credits__link" href="#">
-        <svg class="credits__icon">
-          <use xlink:href="img/sprite.svg#YEBO-logo"></use>
-        </svg>
-        <span class="visually-hidden">Yebo</span>
-      </a>
+      <p class="credits__text">Handcrafted by
+        <a class="credits__link" href="#">
+          <svg class="credits__icon">
+            <use xlink:href="img/sprite.svg#YEBO-logo"></use>
+          </svg>
+          <span class="visually-hidden">Yebo</span>
+        </a>
+      </p>
     </div>
   </footer>
 </body>

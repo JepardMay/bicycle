@@ -14,12 +14,49 @@
 .work__wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: stretch;
   width: 533px;
 }
 
 .work__info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
   padding: 0 67px;
+}
+
+.work__info::after {
+  content: "";
+  position: absolute;
+  bottom: -22px;
+  left: 50%;
+  margin-left: -11px;
+  border: solid 11px transparent;
+  border-top-color: #ffffff;
+}
+
+.work__icon {
+  align-self: center;
+}
+
+.work__icon--oliva {
+  margin-bottom: 31px;
+  width: 41px;
+  height: 30px;
+}
+
+.work__icon--borisa {
+  margin-bottom: 29px;
+  width: 32px;
+  height: 32px;
+}
+
+.work__icon--hulot {
+  margin-bottom: 20px;
+  width: 43px;
+  height: 51px;
 }
 
 .work__title {
@@ -33,7 +70,19 @@
 }
 
 .work__text {
+  position: relative;
   margin: 0;
   .font(16px, 30px);
   text-align: justify;
+}
+
+.work__text::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  margin-left: -25.5px;
+  width: 51px;
+  height: 1px;
+  background-color: @title-color;
 }
