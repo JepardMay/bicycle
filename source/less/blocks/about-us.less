@@ -1,12 +1,14 @@
 .about-us {
+  min-width: @fixed-page-width;
+  background-color: @background-light;
+}
+
+.about-us__wrapper {
   position: relative;
   margin: 0 auto;
   width: @fixed-page-width;
-  padding-top: 194px;
-  padding-right: 241px;
-  padding-bottom: 142px;
-  padding-left: 280px;
-  background-color: @background-light;
+  padding-top: 184px;
+  padding-bottom: 137px;
 }
 
 .about-us__icon {
@@ -20,8 +22,9 @@
 
 .about-us__title {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
   .font-bold();
+  .font(18px);
   text-transform: uppercase;
   letter-spacing: 3.6px;
   text-align: center;
@@ -29,5 +32,8 @@
 }
 
 .about-us__text {
+  margin: 0;
+  margin-right: 240px;
+  margin-left: 280px;
   text-align: center;
 }

@@ -1,4 +1,9 @@
 .shop {
+  min-width: @fixed-page-width;
+  background-color: @background-dark;
+}
+
+.shop__wrapper {
   margin: 0 auto;
   width: @fixed-page-width;
 }
@@ -26,24 +31,6 @@
   }
 }
 
-.shop__image--small {
-  width: 266px;
-}
-
-.shop__image--medium {
-  &:first-child {
-    width: 266px;
-  }
-
-  &:last-child {
-    width: 268px;
-  }
-}
-
-.shop__image--large {
-  width: 533px;
-}
-
 .shop__image img {
   display: block;
 }
@@ -52,7 +39,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: @background-dark;
 }
 
 .shop__button {
@@ -60,8 +46,9 @@
   justify-content: center;
   align-items: center;
   margin: 75px;
+  padding: 8px 0;
   width: 300px;
-  min-height: 50px;
+  min-height: 52px;
   .font-bold();
   .font(14px);
   text-transform: uppercase;
@@ -86,13 +73,11 @@
   background-color: rgba(88, 165, 137, 0.6);
 }
 
-.shop__icon {
-  position: absolute;
-}
-
 .shop__link {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   .font-bold();
   .font(14px);
   text-transform: uppercase;
@@ -106,4 +91,11 @@
   &:focus {
     opacity: 0.3;
   }
+}
+
+.shop__icon {
+  margin-top: 107px;
+  margin-bottom: 4px;
+  width: 51px;
+  height: 30px;
 }
