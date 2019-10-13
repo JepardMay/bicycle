@@ -41,6 +41,7 @@ gulp.task("html", function () {
 gulp.task("js", function () {
   return gulp.src("source/js/*.js")
   .pipe(uglify())
+  .pipe(rename("script.min.css"))
   .pipe(gulp.dest("build/js"))
   .pipe(server.stream());
 });
